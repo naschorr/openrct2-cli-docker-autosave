@@ -36,4 +36,4 @@ RUN openrct2-cli --version \
  && openrct2-cli scan-objects
 
 # Done
-ENTRYPOINT ["sh", "-c", "openrct2-cli host /home/openrct2/.config/OpenRCT2/save/autosave/$(ls -t1 /home/openrct2/.config/OpenRCT2/save/autosave/ | head -n 1)"]
+ENTRYPOINT ["sh", "-c", "openrct2-cli host $(save='/home/openrct2/.config/OpenRCT2/save'; autosave=$(ls -t1 $save/autosave/ | head -n 1); [ -z $autosave ] && echo $save/park.sv6 || echo $save/autosave/$autosave)"]
