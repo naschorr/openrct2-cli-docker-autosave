@@ -13,7 +13,7 @@ Also, you no longer need to specify `host <Path to park file>`, as that's taken 
 ### Unraid
 Here's an example configuration within Unraid:
 
-![Unraid example configuration image](https://github.com/naschorr/openrct2-cli-docker-autosave/master/resources/unraid_config_example.png)
+![Unraid example configuration image](https://raw.githubusercontent.com/naschorr/openrct2-cli-docker-autosave/master/resources/unraid_config_example.png)
 
 ### Note
 This assumes that your container's folder structure is the same as the default that [openrct2-cli](https://hub.docker.com/r/openrct2/openrct2-cli/dockerfile/) expects, and it can't be changed without modifying the Dockerfile. Your default park save needs to be called `park.sv6`, otherwise the script won't detect it.
